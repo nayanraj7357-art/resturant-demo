@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aurum — Fine Dining Restaurant</title>
+  <meta name="description" content="Aurum — Where culinary artistry meets timeless elegance. Award-winning fine dining experience.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/contact-footer.css">
+</head>
+<body>
+
+  <!-- CINEMATIC INTRO -->
+  <div class="intro-screen" id="introScreen">
+    <div class="intro-content">
+      <div class="intro-icon">✦</div>
+      <h1 class="intro-logo">AURUM</h1>
+      <p class="intro-sub">FINE DINING · EST. 2018</p>
+      <div class="intro-loader"><div class="intro-bar" id="introBar"></div></div>
+    </div>
+  </div>
+
+  <!-- CURSOR -->
+  <div class="custom-cursor" id="cursor"></div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="container nav-wrap">
+      <a href="#home" class="nav-brand">AURUM</a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">Our Story</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#private" class="nav-link">Private Dining</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+        <li><a href="#reservation" class="nav-link">Reservation</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="https://wa.me/13105550198" target="_blank" class="nav-whatsapp"><i class="ri-whatsapp-line"></i></a>
+        <a href="tel:+13105550198" class="nav-phone"><i class="ri-phone-line"></i> +1 310 555 0198</a>
+        <a href="#reservation" class="nav-cta">Book a Table</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><i class="ri-menu-3-line"></i></button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2070" alt="Restaurant Interior" class="hero-img">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-particles" id="heroParticles"></div>
+    <div class="container hero-inner">
+      <span class="hero-badge">✦ MICHELIN STARRED ✦</span>
+      <h1 class="hero-title">
+        <span class="title-line"><span class="title-word">Where Every</span></span>
+        <span class="title-line"><span class="title-word">Bite Tells</span></span>
+        <span class="title-line"><span class="title-word accent-text">A Story</span></span>
+      </h1>
+      <p class="hero-desc">Award-winning cuisine crafted with passion, served with grace. An unforgettable culinary journey in the heart of Beverly Hills.</p>
+      <div class="hero-btns">
+        <a href="#menu" class="btn btn-gold">Explore Menu</a>
+        <a href="#reservation" class="btn btn-ghost">Reserve Now</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ACCOLADES -->
+  <section class="accolades">
+    <div class="container accolades-row">
+      <div class="accolade-item gs-reveal">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Michelin_Guide_logo.svg/120px-Michelin_Guide_logo.svg.png" alt="Michelin" style="height:40px;filter:brightness(0) invert(1);opacity:.7">
+        <p>2 Michelin Stars</p>
+      </div>
+      <div class="accolade-item gs-reveal">
+        <i class="ri-award-line"></i>
+        <p>James Beard Award 2024</p>
+      </div>
+      <div class="accolade-item gs-reveal">
+        <i class="ri-trophy-line"></i>
+        <p>World's 50 Best</p>
+      </div>
+      <div class="accolade-item gs-reveal">
+        <i class="ri-star-line"></i>
+        <p>Forbes Travel Guide</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about-section">
+    <div class="container about-grid">
+      <div class="about-images gs-reveal">
+        <div class="about-img-main">
+          <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=800&q=80" alt="Chef at Work">
+        </div>
+        <div class="about-img-secondary">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Plated Dish">
+        </div>
+        <div class="about-experience-badge">
+          <span class="badge-number counter" data-target="8">0</span>
+          <span class="badge-label">Years of<br>Excellence</span>
+        </div>
+      </div>
+      <div class="about-content gs-reveal">
+        <span class="tag-line">Our Story</span>
+        <h2 class="section-title">A Legacy of<br>Culinary Excellence</h2>
+        <p>Founded in 2018 by Executive Chef Marcus Laurent, Aurum represents the pinnacle of modern gastronomy. Every dish is a canvas where seasonal ingredients from local farms meet innovative techniques from around the world.</p>
+        <p>Our philosophy is simple — honor the ingredients, respect the craft, and create moments that linger long after the last bite.</p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num counter" data-target="200">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Signature Dishes</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num counter" data-target="15">0</span>
+            <span class="stat-label">Awards Won</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num counter" data-target="50">0</span><span class="stat-plus">K+</span>
+            <span class="stat-label">Guests Served</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu" class="menu-section">
+    <div class="container">
+      <div class="section-header gs-reveal">
+        <span class="tag-line">Our Menu</span>
+        <h2 class="section-title">Culinary Masterpieces</h2>
+      </div>
+      <div class="menu-tabs gs-reveal">
+        <button class="menu-tab active" data-tab="starters">Starters</button>
+        <button class="menu-tab" data-tab="mains">Main Course</button>
+        <button class="menu-tab" data-tab="desserts">Desserts</button>
+        <button class="menu-tab" data-tab="drinks">Cocktails</button>
+      </div>
+      <div class="menu-content">
+        <div class="menu-panel active" id="starters">
+          <div class="menu-item gs-reveal"><div class="menu-item-top"><h3>Wagyu Tartare</h3><span class="menu-dots"></span><span class="menu-price">$38</span></div><p>A5 wagyu, quail egg, truffle aioli, micro herbs</p></div>
+          <div class="menu-item gs-reveal"><div class="menu-item-top"><h3>Hokkaido Scallops</h3><span class="menu-dots"></span><span class="menu-price">$42</span></div><p>Pan-seared with saffron foam, caviar, citrus gel</p></div>
+          <div class="menu-item gs-reveal"><div class="menu-item-top"><h3>Foie Gras Torchon</h3><span class="menu-dots"></span><span class="menu-price">$45</span></div><p>Fig compote, brioche crisps, Sauternes reduction</p></div>
+          <div class="menu-item gs-reveal"><div class="menu-item-top"><h3>Oysters Royale</h3><span class="menu-dots"></span><span class="menu-price">$36</span></div><p>6 Kumamoto oysters, champagne mignonette, lemon</p></div>
+        </div>
+        <div class="menu-panel" id="mains">
+          <div class="menu-item gs-reveal"><div class="menu-item-top"><h3>A5 Wagyu Striploin</h3><span class="menu-dots"></span><span class="menu-price">$125</span></div><p>Japanese wagyu, truffle jus, roasted marrow, seasonal vegetables</p></div>
+          <div class="menu-item gs-reveal"><div class="menu-item-top"><h3>Lobster Thermidor</h3><span class="menu-dots"></span><span class="menu-price">$89</span></div><p>Whole Maine lobster, cognac cream, gruyère gratin</p></div>
+          <div class="menu-item gs-reveal"><div class="menu-item-top"><h3>Rack of Lamb</h3><span class="menu-dots"></span><span class="menu-price">$78</span></div><p>Herb-crusted, pistachio, mint pesto, pomme purée</p></div>
+          <div class="menu-item gs-reveal"><div class="menu-item-top"><h3>Dover Sole Meunière</h3><span class="menu-dots"></span><span class="menu-price">$95</span></div><p>Whole fish, brown butter, capers, lemon, parsley</p></div>
+        </div>
+        <div class="menu-panel" id="desserts">
+          <div class="menu-item gs-reveal"><div class="menu-item-top"><h3>Valrhona Chocolate Dome</h3><span class="menu-dots"></span><span class="menu-price">$28</span></div><p>70% dark chocolate, gold leaf, raspberry coulis</p></div>
+          <div class="menu-item gs-reveal"><div class="menu-item-top"><h3>Crème Brûlée</h3><span class="menu-dots"></span><span class="menu-price">$22</span></div><p>Tahitian vanilla bean, caramelized sugar, fresh berries</p></div>
+          <div class="menu-item gs-reveal"><div class="menu-item-top"><h3>Soufflé Grand Marnier</h3><span class="menu-dots"></span><span class="menu-price">$26</span></div><p>Orange liqueur soufflé, crème anglaise</p></div>
+          <div class="menu-item gs-reveal"><div class="menu-item-top"><h3>Cheese Selection</h3><span class="menu-dots"></span><span class="menu-price">$32</span></div><p>5 artisanal cheeses, honeycomb, walnut bread</p></div>
+        </div>
+        <div class="menu-panel" id="drinks">
+          <div class="menu-item gs-reveal"><div class="menu-item-top"><h3>Aurum Gold Rush</h3><span class="menu-dots"></span><span class="menu-price">$24</span></div><p>Bourbon, honey, lemon, edible gold flakes</p></div>
+          <div class="menu-item gs-reveal"><div class="menu-item-top"><h3>Midnight Negroni</h3><span class="menu-dots"></span><span class="menu-price">$22</span></div><p>Aged gin, Campari, sweet vermouth, orange peel</p></div>
+          <div class="menu-item gs-reveal"><div class="menu-item-top"><h3>Sakura Martini</h3><span class="menu-dots"></span><span class="menu-price">$26</span></div><p>Japanese gin, cherry blossom, yuzu, elderflower</p></div>
+          <div class="menu-item gs-reveal"><div class="menu-item-top"><h3>Truffle Old Fashioned</h3><span class="menu-dots"></span><span class="menu-price">$28</span></div><p>Rye whiskey, truffle-infused syrup, Angostura bitters</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRIVATE DINING -->
+  <section id="private" class="private-section">
+    <div class="private-bg">
+      <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?q=80&w=2070" alt="Private Dining" class="private-img">
+      <div class="private-overlay"></div>
+    </div>
+    <div class="container private-inner gs-reveal">
+      <span class="tag-line">Exclusive</span>
+      <h2 class="section-title">Private Dining<br>& Events</h2>
+      <p>Host your most memorable occasions in our exclusive private dining rooms. From intimate celebrations to corporate events, our dedicated team crafts bespoke culinary experiences.</p>
+      <div class="private-features">
+        <div class="pf-item"><i class="ri-group-line"></i><span>Up to 40 Guests</span></div>
+        <div class="pf-item"><i class="ri-restaurant-line"></i><span>Custom Menus</span></div>
+        <div class="pf-item"><i class="ri-goblet-line"></i><span>Wine Pairing</span></div>
+        <div class="pf-item"><i class="ri-music-2-line"></i><span>Live Music</span></div>
+      </div>
+      <a href="mailto:events@aurum-dining.com" class="btn btn-gold">Inquire Now</a>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="gallery-section">
+    <div class="container">
+      <div class="section-header gs-reveal">
+        <span class="tag-line">Gallery</span>
+        <h2 class="section-title">Visual Feast</h2>
+      </div>
+      <div class="gallery-masonry">
+        <div class="gal-item gal-tall gs-reveal"><img src="https://images.unsplash.com/photo-1544025162-8369fd998aa8?w=600&q=80" alt="Dish"><div class="gal-overlay"><span>Wagyu A5</span></div></div>
+        <div class="gal-item gs-reveal"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=80" alt="Dish"><div class="gal-overlay"><span>Scallops</span></div></div>
+        <div class="gal-item gs-reveal"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80" alt="Dish"><div class="gal-overlay"><span>Chef's Special</span></div></div>
+        <div class="gal-item gal-tall gs-reveal"><img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=600&q=80" alt="Dessert"><div class="gal-overlay"><span>Chocolate Dome</span></div></div>
+        <div class="gal-item gs-reveal"><img src="https://images.unsplash.com/photo-1505826759037-406b40feb4cd?q=80&w=600" alt="Cocktails"><div class="gal-overlay"><span>Cocktails</span></div></div>
+        <div class="gal-item gs-reveal"><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80" alt="Interior"><div class="gal-overlay"><span>Ambiance</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="testimonials-section">
+    <div class="container">
+      <div class="section-header gs-reveal">
+        <span class="tag-line">Testimonials</span>
+        <h2 class="section-title">What Our Guests Say</h2>
+      </div>
+      <div class="testimonial-slider gs-reveal">
+        <div class="testimonial-track" id="testimonialTrack">
+          <div class="testimonial-card">
+            <div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div>
+            <p class="testi-text">"An absolutely transcendent dining experience. The Wagyu was the best I've ever had, and the wine pairing was impeccable. This is what fine dining should be."</p>
+            <div class="testi-author"><strong>James Robertson</strong><span>Food Critic, LA Times</span></div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div>
+            <p class="testi-text">"We celebrated our anniversary here and it was magical. The private dining room, the personalized menu — every detail was perfect. Unforgettable!"</p>
+            <div class="testi-author"><strong>Sarah & Michael Chen</strong><span>Anniversary Celebration</span></div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></div>
+            <p class="testi-text">"Chef Marcus is a true artist. The tasting menu was a journey through incredible flavors. The presentation alone is worth the visit. Simply world-class."</p>
+            <div class="testi-author"><strong>Elena Vasquez</strong><span>Michelin Guide Reviewer</span></div>
+          </div>
+        </div>
+        <div class="testi-nav">
+          <button class="testi-btn" id="testiPrev"><i class="ri-arrow-left-line"></i></button>
+          <button class="testi-btn" id="testiNext"><i class="ri-arrow-right-line"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVATION -->
+  <section id="reservation" class="reservation-section">
+    <div class="container">
+      <div class="reservation-grid gs-reveal">
+        <div class="res-info">
+          <span class="tag-line">Reservation</span>
+          <h2 class="section-title">Reserve Your<br>Experience</h2>
+          <p>Secure your table at Aurum for an evening of exceptional cuisine and impeccable service. For parties larger than 6, please email us directly.</p>
+          <div class="res-details">
+            <div class="res-detail"><i class="ri-map-pin-2-fill"></i><div><h4>Location</h4><p>123 Luxury Avenue<br>Beverly Hills, CA 90210</p></div></div>
+            <div class="res-detail"><i class="ri-phone-fill"></i><div><h4>Phone</h4><p>+1 (310) 555-0198</p></div></div>
+            <div class="res-detail"><i class="ri-mail-fill"></i><div><h4>Email</h4><p>reservations@aurum-dining.com</p></div></div>
+            <div class="res-detail"><a href="https://wa.me/13105550198" target="_blank" style="display:flex;align-items:flex-start;gap:18px;color:inherit"><i class="ri-whatsapp-fill"></i><div><h4>WhatsApp</h4><p>Chat with us instantly<br>+1 (310) 555-0198</p></div></a></div>
+            <div class="res-detail"><i class="ri-time-fill"></i><div><h4>Hours</h4><p>Tue — Sun: 5:00 PM — 11:00 PM<br>Closed Mondays</p></div></div>
+          </div>
+          <div class="res-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.7!2d-118.4!3d34.07!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDA0JzEyLjAiTiAxMTjCsDI0JzAwLjAiVw!5e0!3m2!1sen!2sus!4v1234" width="100%" height="200" style="border:0;filter:invert(90%) hue-rotate(180deg);opacity:.7;border-radius:8px" loading="lazy"></iframe>
+          </div>
+        </div>
+        <div class="res-form-wrap">
+          <form class="res-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group"><label>First Name</label><input type="text" placeholder="John" required></div>
+              <div class="form-group"><label>Last Name</label><input type="text" placeholder="Doe" required></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><label>Email</label><input type="email" placeholder="john@gmail.com" required></div>
+              <div class="form-group"><label>Phone</label><input type="tel" placeholder="+1 (555) 000-0000" required></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><label>Date</label><input type="date" required></div>
+              <div class="form-group"><label>Time</label>
+                <select required>
+                  <option value="">Select Time</option>
+                  <option>5:00 PM</option><option>5:30 PM</option>
+                  <option>6:00 PM</option><option>6:30 PM</option>
+                  <option>7:00 PM</option><option>7:30 PM</option>
+                  <option>8:00 PM</option><option>8:30 PM</option>
+                  <option>9:00 PM</option><option>9:30 PM</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><label>Guests</label>
+                <select required>
+                  <option value="1">1 Guest</option><option value="2" selected>2 Guests</option>
+                  <option value="3">3 Guests</option><option value="4">4 Guests</option>
+                  <option value="5">5 Guests</option><option value="6">6 Guests</option>
+                </select>
+              </div>
+              <div class="form-group"><label>Occasion</label>
+                <select>
+                  <option value="">Select Occasion</option>
+                  <option>Birthday</option><option>Anniversary</option>
+                  <option>Business Dinner</option><option>Date Night</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group"><label>Special Requests</label><textarea rows="3" placeholder="Dietary restrictions, allergies, or special arrangements..."></textarea></div>
+            <button type="submit" class="btn btn-gold btn-full">Confirm Reservation</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h2 class="footer-logo">AURUM</h2>
+          <p class="footer-tagline">Where culinary artistry meets timeless elegance.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+            <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+            <a href="https://wa.me/13105550198" target="_blank" aria-label="WhatsApp"><i class="ri-whatsapp-line"></i></a>
+            <a href="#" aria-label="Twitter"><i class="ri-twitter-x-line"></i></a>
+            <a href="#" aria-label="TripAdvisor"><i class="ri-restaurant-line"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#reservation">Reservations</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+13105550198"><i class="ri-phone-line"></i> +1 310 555 0198</a></li>
+            <li><a href="mailto:reservations@aurum-dining.com"><i class="ri-mail-line"></i> reservations@aurum-dining.com</a></li>
+            <li><a href="#"><i class="ri-map-pin-line"></i> 123 Luxury Ave, Beverly Hills</a></li>
+            <li><a href="https://wa.me/13105550198" target="_blank"><i class="ri-whatsapp-line"></i> WhatsApp Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <p class="newsletter-text">Subscribe for exclusive offers and seasonal menu updates.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="your@gmail.com" required>
+            <button type="submit"><i class="ri-send-plane-fill"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Aurum Fine Dining. All Rights Reserved.</p>
+        <p>Designed with <i class="ri-heart-fill" style="color:#c9a55a"></i> for extraordinary experiences</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/13105550198?text=Hi%20Aurum!%20I'd%20like%20to%20make%20a%20reservation." target="_blank" class="whatsapp-float" id="whatsappFloat" aria-label="Chat on WhatsApp">
+    <i class="ri-whatsapp-line"></i>
+    <span class="wa-tooltip">Chat with us!</span>
+  </a>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
