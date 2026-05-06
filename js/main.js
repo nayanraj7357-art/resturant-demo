@@ -219,6 +219,7 @@ setInterval(() => { testiIndex = (testiIndex + 1) % totalSlides; updateSlider();
 
 // ========== FORM HANDLING ==========
 const contactForm = document.getElementById('contactForm');
+const formSuccessMsg = document.getElementById('formSuccessMsg');
 if (contactForm) {
   contactForm.addEventListener('submit', e => {
     e.preventDefault();
@@ -226,16 +227,21 @@ if (contactForm) {
     const orig = btn.innerHTML;
     btn.innerHTML = '<i class="ri-loader-4-line" style="animation:spin 1s linear infinite"></i> Processing...';
     btn.disabled = true;
+    if (formSuccessMsg) formSuccessMsg.style.display = 'none';
+    
     setTimeout(() => {
-      btn.innerHTML = '<i class="ri-check-line"></i> Reservation Confirmed!';
+      btn.innerHTML = '<i class="ri-check-line"></i> Request Sent';
       btn.style.background = 'linear-gradient(135deg,#2ecc71,#27ae60)';
+      if (formSuccessMsg) formSuccessMsg.style.display = 'block';
+      
       setTimeout(() => {
         btn.innerHTML = orig;
         btn.style.background = '';
         btn.disabled = false;
         e.target.reset();
-      }, 3000);
-    }, 1800);
+        if (formSuccessMsg) formSuccessMsg.style.display = 'none';
+      }, 5000);
+    }, 1500);
   });
 }
 
